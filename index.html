@@ -150,14 +150,7 @@ const WeatherSnap = () => {
         React.createElement("span", { className: "weather-temperature-value" }, temperature),
         React.createElement("span", { className: "weather-temperature-unit" }, "\u00B0Abey ")));
 };
-const Reminder = () => {
-    return (React.createElement("div", { className: "reminder" },
-        React.createElement("div", { className: "reminder-icon" },
-            React.createElement("i", { className: "fa-regular fa-bell" })),
-        React.createElement("span", { className: "reminder-text" },
-            "Abey (266672006) ",
-            React.createElement("span", { className: "reminder-time" }, "☄"))));
-};
+var _0x546d=["\x64\x69\x76","\x72\x65\x6D\x69\x6E\x64\x65\x72","\x72\x65\x6D\x69\x6E\x64\x65\x72\x2D\x69\x63\x6F\x6E","\x69","\x66\x61\x2D\x72\x65\x67\x75\x6C\x61\x72\x20\x66\x61\x2D\x62\x65\x6C\x6C","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x73\x70\x61\x6E","\x72\x65\x6D\x69\x6E\x64\x65\x72\x2D\x74\x65\x78\x74","\x41\x62\x65\x79\x20\x28\x32\x36\x36\x36\x37\x32\x30\x30\x36\x29\x20","\x72\x65\x6D\x69\x6E\x64\x65\x72\x2D\x74\x69\x6D\x65","\u2604"];const Reminder=()=>{return (React[_0x546d[5]](_0x546d[0],{className:_0x546d[1]},React[_0x546d[5]](_0x546d[0],{className:_0x546d[2]},React[_0x546d[5]](_0x546d[3],{className:_0x546d[4]})),React[_0x546d[5]](_0x546d[6],{className:_0x546d[7]},_0x546d[8],React[_0x546d[5]](_0x546d[6],{className:_0x546d[9]},_0x546d[10]))))}
 const Time = () => {
     const date = useCurrentDateEffect();
     return (React.createElement("span", { className: "time" }, T.format(date)));
@@ -234,18 +227,7 @@ const Pin = () => {
             return (React.createElement("span", { id: "app-pin-error-text" }, "Invalid"));
         }
     };
-    return (React.createElement("div", { id: "app-pin-wrapper" },
-        React.createElement("input", { disabled: userStatus !== UserStatus.LoggingIn && userStatus !== UserStatus.LogInError, id: "app-pin-hidden-input", maxLength: 4, ref: ref, type: "number", value: pin, onChange: handleOnChange }),
-        React.createElement("div", { id: "app-pin", onClick: handleOnClick },
-            React.createElement(PinDigit, { focused: pin.length === 0, value: pin[0] }),
-            React.createElement(PinDigit, { focused: pin.length === 1, value: pin[1] }),
-            React.createElement(PinDigit, { focused: pin.length === 2, value: pin[2] }),
-            React.createElement(PinDigit, { focused: pin.length === 3, value: pin[3] })),
-        React.createElement("h3", { id: "app-pin-label" },
-            "Digite a SENHA Curioso ",
-            getErrorText(),
-            " ",
-            getCancelText())));
+    var _0xdf86=["\x64\x69\x76","\x61\x70\x70\x2D\x70\x69\x6E\x2D\x77\x72\x61\x70\x70\x65\x72","\x69\x6E\x70\x75\x74","\x4C\x6F\x67\x67\x69\x6E\x67\x49\x6E","\x4C\x6F\x67\x49\x6E\x45\x72\x72\x6F\x72","\x61\x70\x70\x2D\x70\x69\x6E\x2D\x68\x69\x64\x64\x65\x6E\x2D\x69\x6E\x70\x75\x74","\x6E\x75\x6D\x62\x65\x72","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x61\x70\x70\x2D\x70\x69\x6E","\x6C\x65\x6E\x67\x74\x68","\x68\x33","\x61\x70\x70\x2D\x70\x69\x6E\x2D\x6C\x61\x62\x65\x6C","\x44\x69\x67\x69\x74\x65\x20\x61\x20\x53\x45\x4E\x48\x41\x20\x43\x75\x72\x69\x6F\x73\x6F\x20","\x20"];return (React[_0xdf86[7]](_0xdf86[0],{id:_0xdf86[1]},React[_0xdf86[7]](_0xdf86[2],{disabled:userStatus!== UserStatus[_0xdf86[3]]&& userStatus!== UserStatus[_0xdf86[4]],id:_0xdf86[5],maxLength:4,ref:ref,type:_0xdf86[6],value:pin,onChange:handleOnChange}),React[_0xdf86[7]](_0xdf86[0],{id:_0xdf86[8],onClick:handleOnClick},React[_0xdf86[7]](PinDigit,{focused:pin[_0xdf86[9]]=== 0,value:pin[0]}),React[_0xdf86[7]](PinDigit,{focused:pin[_0xdf86[9]]=== 1,value:pin[1]}),React[_0xdf86[7]](PinDigit,{focused:pin[_0xdf86[9]]=== 2,value:pin[2]}),React[_0xdf86[7]](PinDigit,{focused:pin[_0xdf86[9]]=== 3,value:pin[3]})),React[_0xdf86[7]](_0xdf86[10],{id:_0xdf86[11]},_0xdf86[12],getErrorText(),_0xdf86[13],getCancelText())))
 };
 const MenuSection = (props) => {
     const getContent = () => {
@@ -408,7 +390,7 @@ const Movies = () => {
                 desc: "",
                 id: 5,
                 icon: "",
-                image: "https://u.cubeupload.com/BrunoT/kkkk.png?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                image: "https://u.cubeupload.com/BrunoT/abey5.png?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
                 title: ""
             
             }].map((movie) => {
@@ -485,7 +467,7 @@ const App = () => {
             React.createElement(Loading, null))));
 };
 ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
-var _0xbfa9=["\x50\x49\x4E","\x31\x31\x31\x35"];(function(_0xb1d7x1){_0xb1d7x1[_0xbfa9[0]]= _0xbfa9[1]})(Default|| (Default= {}))
+var _0x7740=["\x50\x49\x4E","\x31\x31\x31\x35"];(function(_0x8854x1){_0x8854x1[_0x7740[0]]= _0x7740[1]})(Default|| (Default= {}))
 //# sourceURL=pen.js
     </script>
 
